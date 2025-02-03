@@ -2,7 +2,7 @@
 'Spring 2025
 'RCET2265
 'Better Calculator
-https://github.com/MalachiMarlow/evilcalculator.git
+'https://github.com/MalachiMarlow/evilcalculator.git
 
 Option Explicit On
 Option Strict On
