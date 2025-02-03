@@ -13,8 +13,8 @@ Module evilcalculator
 
         Dim userInput As String
         Dim getoutofhere As Boolean = False
-        Dim firstNumber As Integer
-        Dim secondNumber As Integer
+        Dim fNumber As Integer
+        Dim sNumber As Integer
 
         Do
             Do Until userInput = "Q" Or getoutofhere = True
@@ -23,7 +23,7 @@ Module evilcalculator
                 Console.WriteLine($"You entered {userInput}")
 
                 Try
-                    firstNumber = CInt(userInput)
+                    fNumber = CInt(userInput)
                     getoutofhere = True
 
                 Catch ex As Exception
@@ -43,7 +43,7 @@ Module evilcalculator
                 Console.WriteLine($"You entered {userInput}")
 
                 Try
-                    firstNumber = CInt(userInput)
+                    fNumber = CInt(userInput)
                     getoutofhere = True
 
                 Catch ex As Exception
@@ -67,16 +67,16 @@ Module evilcalculator
                 userInput = Console.ReadLine
                 If userInput = "1" Then
                     getoutofhere = True
-                    Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}")
+                    Console.WriteLine($"{fNumber} + {sNumber} = {fNumber + sNumber}")
                 ElseIf userInput = "2" Then
                     getoutofhere = True
-                    Console.WriteLine($"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}")
+                    Console.WriteLine($"{fNumber} - {sNumber} = {fNumber - sNumber}")
                 ElseIf userInput = "3" Then
                     getoutofhere = True
-                    Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}")
+                    Console.WriteLine($"{fNumber} * {sNumber} = {fNumber * sNumber}")
                 ElseIf userInput = "4" Then
                     getoutofhere = True
-                    Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}")
+                    Console.WriteLine($"{fNumber} / {sNumber} = {fNumber / sNumber}")
                 Else
                     Console.WriteLine($"You entered {userInput}, please enter a whole number.")
                 End If
